@@ -107,3 +107,66 @@ print(x_endswith_2)
 #find()
 x_find = txtcount.find('codes')
 print(x_find)
+#format
+txtz = "for only {price:.2f} dollars"
+print(txtz.format(price=100))
+txty = "I love cars and {programming_language} and {car_name} are best."
+print(txty.format(programming_language="python", car_name="Mustag"))
+#isalpha()	Returns True if all characters in the string are in the alphabet
+# isdigit()	Returns True if all characters in the string are digits
+# islower()	Returns True if all characters in the string are lower case
+# isnumeric()	Returns True if all characters in the string are numeric
+# isupper()	Returns True if all characters in the string are upper case
+# startswith()	Returns true if the string starts with the specified value
+
+#list/Array 
+#append()
+myList = [1,12,3,4,5,3]
+mySecondList = [100, 200, 400]
+myList.append(6)
+# print(myList)
+#clear()
+# myList.clear()
+#copy()
+my_another_list = myList.copy()
+print(my_another_list)
+print(myList)
+#count()
+print(myList.count(3)) #its count 3 how many present in mylist
+#extend()
+myList.extend(mySecondList)
+print(myList)
+#index()
+print(myList.index(100))
+#insert()
+myList.insert(7,1000)
+print(myList)
+print(myList.index(100))
+#pop()
+myList.pop()
+print(myList)
+#remove
+myList.remove(1000)
+print(myList)
+#reverse()
+myList.reverse()
+print(myList)
+#sort()
+myList.sort()
+print(myList)
+myList.sort(reverse=True)
+print(myList)
+
+#boolean
+print(bool("hello"))
+print(bool(""))
+print(bool())
+print(bool(1))
+print(bool([]))
+print(bool([1,2,3]))
+print(bool((1,2,30)))
+print(bool(()))
+print(bool({}))
+print(bool({name:"prashant", age:25}))
+
+print(isinstance(myList, tuple)) #its check whether the mylist is tuple or not (false), mylist is list not tuple thats why false
