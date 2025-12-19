@@ -37,3 +37,42 @@ print(json.dumps(31.76))
 print(json.dumps(True))
 print(json.dumps(False))
 print(json.dumps(None))
+
+# example for converting a python object containing all the legal data types 
+minidictData = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+
+print(json.dumps(minidictData))
+# indent 
+print(json.dumps(minidictData, indent=4))
+# separators
+print(json.dumps(x, indent=4, separators=(". ", " = ")))
+# sort_keys
+print(json.dumps(x, indent=4, sort_keys=True))
+
+# python regex 
+
+import re
+pattern = "cat"
+
+text = "hello baby cat vat dat rat nat mat sat wat"
+
+resutlt = re.search(pattern, text)
+print(resutlt)
+
+# example 
+# Search the string to see if it starts with "The" and ends with "Spain":
+
+txt = "The rain in Spain"
+macthly = re.search("^The.*Spain$", txt)
+print(macthly)
