@@ -91,6 +91,16 @@ print(txt.capitalize())
 print(txt.casefold())
 #center - returns a centered string
 print(txt.center(20,"/"))
+# ljust - it will add element towards right side 
+txt22 = "hello"
+print(txt22.ljust(10, "*"))
+
+# rjust - it wil add element towards left side 
+print(txt22.rjust(10, "*"))
+
+# center - it will add element towards both sides
+print(txt22.center(15, '*'))
+
 #"@".join()
 myTuple = ('apple', 'ball', 'cat')
 xjoin = "#".join(myTuple) #=apple#ball#cat
@@ -118,6 +128,10 @@ print(txty.format(programming_language="python", car_name="Mustag"))
 # isnumeric()	Returns True if all characters in the string are numeric
 # isupper()	Returns True if all characters in the string are upper case
 # startswith()	Returns true if the string starts with the specified value
+# endswith() returns true if the strings ends with the specified value
+
+s1 = 'hello good morning'
+s1.isupper()
 
 #list/Array 
 #append()
