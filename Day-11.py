@@ -114,3 +114,33 @@ print(txt5)
 
 # -> execute functions in f-strings
 
+fruit = "apples"
+txt6 = f"I love {fruit.upper()}"
+print(txt6)
+
+price = 50000000
+txt7 = f"the price is {price:,} dollars"
+print(txt7)
+
+txt8 = "the price is {} and {} kgs"
+print(txt8.format(price, 7))
+
+age = 36
+name = "John"
+txt = "His name is {1}. {1} is {0} years old."
+print(txt.format(age, name))
+
+# None type 
+
+a = None
+
+# user input 
+x = input("enter your name : ")
+strr = f"hello {x} nice to meet you"
+print(strr)
+
+xx = input("enter you number: ")
+
+userInput = int(xx)
+totalvalue = userInput * userInput
+print(totalvalue)
