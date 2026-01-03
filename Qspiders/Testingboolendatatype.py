@@ -33,30 +33,39 @@
 # print(type(oq))
 
 # aa = None
-# # print(type(aa))
-# print(bool(aa))
+# # # print(type(aa))
+# # print(bool(aa))
 
-a = "Abc"
-b = str("sjdfl")
-c = None
+# a = "Abc"
+# b = str("sjdfl")
+# c = None
 
 
 mylist = [1,2,33,4,5]
 mylist.append(23)
-mylist.pop()
+# mylist.pop()
 
 
 mylist.extend([1,2,3,4,5,6,7])
-mylist.extend("apple")
-
-print(mylist[-1])
 print(mylist)
+# mylist.extend("apple")
 
-mylist.insert(1, 100)
+# print(mylist[-1])
+# print(mylist)
 
-print(mylist)
+# mylist.insert(1, 100)
 
-mysecondlist = [1,2,4,5,6, ["a", "b", "c"]]
-print(mysecondlist[-1])
+# print(mylist)
+
+# mysecondlist = [1,2,4,5,6, ["a", "b", "c"]]
+# print(mysecondlist[-1])
 
 # print(mysecondlist.reverse())
+
+# mylist = ['a','b','c','d','e']
+# print(mylist[-5:-2])
+# print(mylist[5:-5:-1])
+# print(mylist[-6:-1:-2])
+# print(mylist[::-2])
+
+# print(mylist[::2])
