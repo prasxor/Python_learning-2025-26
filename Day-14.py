@@ -242,3 +242,5 @@ class Person:
 p5 = Person("prashant", 10000000)
 print(p5.name)
 print(p5.__salary) # error: we can't access the private property outside directly we need to use getter
+
+
