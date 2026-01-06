@@ -26,13 +26,3 @@ while True:
 
 
     
-#     if userChoice == 1:
-#     while True:
-#         userInput = str(input("Enter your Expense, press 'exit' to stop: "))
-#         if userInput.lower() == "exit":
-#             break
-#         expenses_list.append(float(userInput))
-# elif userChoice == 2:
-#     print("Your expenses are : ", expenses_list)
-# else:
-#     print("app as been exited")
