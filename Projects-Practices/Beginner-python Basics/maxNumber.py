@@ -1,23 +1,21 @@
+myList = []
 
-# def TotalSum(mylist):
-#     i = float('-inf')
-#     i = int(i)
-#     for i in mylist:
-#         if i>= mylist[i]:
-#             i = mylist[i]
-#     print("max value in list is: ",i )
+print("Enter the values to add in list")
+while True:
+    listValues = int(input("Enter the values and '00' for exit: "))
+    if listValues == 00:
+        print(myList)
+        break
+    myList.append(listValues)
 
-# myList = []
+def TotalSum(x):
+    minvalue = 0
+    i = 0
+    print(len(x))
+    while i<=len(x)-1:
+        if x[i]>= minvalue:
+            minvalue = x[i]
+        i = i+1
+    print("max value in list is: ",minvalue )
 
-# print("Enter the values to add in list")
-# while True:
-#     listValues = float(input("Enter the values and '00' for exit: "))
-#     if listValues == 00:
-#         break
-#     myList.append(listValues)
-    
-    
-# TotalSum(myList)
-
-i =  float('-inf')
-print(i)
+TotalSum(myList)
