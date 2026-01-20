@@ -53,7 +53,9 @@
     </ol>
 
     <table border="1px">
-        <caption>hello</caption>
+      <caption>
+        hello
+      </caption>
       <thead>
         <tr>
           <th>S.No</th>
@@ -61,21 +63,46 @@
         </tr>
       </thead>
       <tbody>
-            <tr>
-                <td>1</td>
-                <td>Prashant kumar sinha</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Suraj</td>
-            </tr>
+        <tr>
+          <td>1</td>
+          <td>Prashant kumar sinha</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Suraj</td>
+        </tr>
       </tbody>
     </table>
 
     <!-- <input type="datetime-local" name="" id="">
     <input type="date" name="" id=""> -->
     <!-- <input type="datetime" name="" id=""> -->
-     <input type="file" name="" id="">
-     <input type="submit" value="sumbit">
+    <input type="file" name="" id="" />
+    <input type="submit" value="sumbit" />
+
+    <label for="cars">choose a car:</label>
+    <select name="cars" id="cars">
+      <optgroup label="swedish cars">
+        <option value="volvo">volvo</option>
+        <option value="saab">saab</option>
+      </optgroup>
+      <optgroup label="german cars">
+        <option value="mercedes">mercedes</option>
+        <option value="audi">audi</option>
+      </optgroup>
+    </select>
+
+    <label for="movies"></label>
+    <input type="text" placeholder="enter your favorite movie" list="movies">
+    <datalist id="movies">
+      <option value="bahuubali">bahubali</option>
+      <option value="rrr">RRR</option>
+      <option value="Interstellar">Interstellar</option>
+    </datalist>
+
+    <details>
+      hello
+      <summary>this is hello babay</summary>
+    </details>
   </body>
 </html>
