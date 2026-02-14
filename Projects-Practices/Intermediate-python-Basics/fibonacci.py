@@ -4,7 +4,7 @@ i = 0
 a= 0
 b=1
 
-while 0<=100:
+while i<=10:
     calculate = a+b
     a = b
     b = calculate
