@@ -25,5 +25,3 @@ if n == str(sum):
 else: 
     print("It is not strong")
 
-# print(curr)
-# print(sum)  
