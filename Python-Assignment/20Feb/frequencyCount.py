@@ -49,7 +49,7 @@ for char in userInput:
         dict_freq[char] +=1
     else:
         dict_freq[char] = 1
-    # dict_freq[char] += 1 if char in (dict_freq) else dict_freq[char] = 1
+    dict_freq[char] += 1 if char in (dict_freq) else dict_freq[char] = 1
         
 max_var,key= float("-inf"),None
 # print(dict_freq)
