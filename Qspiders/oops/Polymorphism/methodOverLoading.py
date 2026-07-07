@@ -10,7 +10,7 @@
 # c1.add(1,2,3) #6
 
 
-# PARTIAL METHOD OVERLOADING WITH DEFAULT PARAMETER 
+# PARTIAL METHOD OVERLOADING WITH DEFAULT ARGUMENT 
 
 # class Sample:
 #     def add(self,a=0, b=0,c=0):
@@ -22,15 +22,29 @@
 # s1.add(1)
 
 # TUPLE VARIABLE ARGUMENT
-class Sample:
-    def add(self, *args):
-        total = 0
-        for i in args:
-            total +=i
+# class Sample:
+#     def add(self, *args):
+#         total = 0
+#         for i in args:
+#             total +=i
 
-        return total
+#         return total
     
+# s1 = Sample()
+# res = s1.add(1,2,3)
+# print(res)
+# print(s1.add(1,2,3,4,5,5,6,7,7,88,))
+
+
+
+# PARTIAL METHOD OVERLOADING WITH DICTIONARY VARIABLE ARGUMENT
+class Sample:
+    def add(self,**kwargs):
+        total = 0
+        for i in kwargs.values():
+            total +=i
+        
+        return total
+
 s1 = Sample()
-res = s1.add(1,2,3)
-print(res)
-print(s1.add(1,2,3,4,5,5,6,7,7,88,))
+print(s1.add(a=10,b=20,c=30))
