@@ -26,9 +26,11 @@ while True:
         userName = str(input("Enter your name: "))
         userPin = int(input("Enter your account pin: "))
         balance = 0
-        Cid = customUserNameCreator(userName,userPin)
+        cid = customUserNameCreator(userName,userPin)
         cid = Sbi(userName, balance)
         
         print(f"{userName} your account as been created and your current balance is {balance}")
     elif userChoice == 2:
-        CheckUsername = 
+        CheckUsername = 0
+    else : 
+        pass
