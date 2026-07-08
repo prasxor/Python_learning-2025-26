@@ -39,6 +39,7 @@ while True:
                 print(f"{userName} your account as been created and your current balance is {balance}")
                 # userDict[userName] = confirmUserPin
                 userDict.setdefault(userName, confirmUserPin)
+                userDict[userName]["account"]
                 break
             else:
                 print("pin is incorrect, create again")
