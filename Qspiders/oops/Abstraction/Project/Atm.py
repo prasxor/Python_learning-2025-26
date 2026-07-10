@@ -34,8 +34,8 @@ while True:
             if userPin == confirmUserPin:
                 balance = 0
                 balance = globalBalance
-                cid = customUserNameCreator(userName,userPin)
-                cid = Sbi(userName, balance)
+                # cid = customUserNameCreator(userName,userPin)
+                global cid = Sbi(userName, balance)
                 print(f"{userName} your account as been created and your current balance is {balance}")
                 # userDict[userName] = confirmUserPin
                 userDict.setdefault(userName, confirmUserPin)
@@ -52,11 +52,25 @@ while True:
             if checkPin == userDict[checkUsername]:
                 print("Login successful")
                 print(f"your current balance is Rs:{globalBalance}")
+                # .checkBalance()
             else:
                 print("pin is incorrect, try again")
         else:
             print("username is not found, create new account")
     elif userChoice == 3:
-        
+        checkUsername = str(input("Enter your user name : "))
+        if checkUsername in userDict:
+            print(f"Welcome {checkUsername}")
+            checkPin = int(input("Enter your pin: "))
+            if checkPin == userDict[checkUsername]:
+                print("Login successful")
+                cid.deposit(10000)
+                
+                # print(f"your current balance is Rs:{globalBalance}")
+                
+            else:
+                print("pin is incorrect, try again")
+        else:
+            print("username is not found, create new account")
     else : 
         pass
