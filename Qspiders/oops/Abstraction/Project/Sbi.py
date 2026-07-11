@@ -7,7 +7,7 @@ class Sbi(Bank):
         self.balance = balance
     
     def checkBalance(self):
-        print(f"your current balance is {self.balance}")
+        print(f"Hey {self.name}, your current balance is {self.balance}")
     
     def deposit(self, amount):
         if self.balance>=0:
@@ -24,7 +24,7 @@ class Sbi(Bank):
         else:
             print("insufficient balance")
             
-c1 = Sbi("prashant", 1000000)
-c1.checkBalance()
-c1.deposit(200000)
-c1.withdraw(1)
+# c1 = Sbi("prashant", 1000000)
+# c1.checkBalance()
+# c1.deposit(200000)
+# c1.withdraw(1)
